@@ -12,7 +12,7 @@
           <img src="{{profile.avatar_url}}" class="rounded-circle img-responsive" width="400px" alt="profile img">
         </div>
 
-        <div class="col-sm-5">
+        <div class="col-sm-3">
           <ul class="list-group">
             <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
             <li class="list-group-item" *ngIf="profile.email"><a href="{{profile.email}}">{{profile.email}}</a> </li>
@@ -21,7 +21,7 @@
           </ul>
         </div>
 
-        <div class="col -sm-5">
+        <div class="col-sm-5">
           <div>
             <p>
               <button class="btn btn-success"><span class="badge">{{profile.followers}}</span>Followers</button>
@@ -29,9 +29,23 @@
               <button class="btn btn-secondary"><span class="badge">{{profile.public_gists}}</span>Public Gists</button>
               <button class="btn btn-warning"><span class="badge">{{profile.public_repos}}</span>Public Repos </button>
             </p>
+            <br>
+
             <p>
               <a href="{{profile.html_url}}" class="btn btn-primary">View Github Profile</a>
             </p>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Repositories</h3>
+              </div>
+              <div class="panel-body" *ngFor="let repo of repos"> <hr>
+                <p>
+                   <strong>{{repo.name}}</strong> <a href="{{repo.html_url}}" class="btn btn-info">View project on github</a>
+                </p>
+                <p *ngIf="repo.description">{{repo.description}}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
