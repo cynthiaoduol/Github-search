@@ -9,28 +9,31 @@
     <div class="panel-body">
       <div class="row">
         <div class="col-sm -3">
-            <img src="{{profile.avatar_url}}" class="rounded-circle img-responsive" width="400px" alt="profile img">
+          <img src="{{profile.avatar_url}}" class="rounded-circle img-responsive" width="400px" alt="profile img">
         </div>
-        
-       <div class="col-sm-5">
-         <ul class="list-group">
-           <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
-           <li class="list-group-item" *ngIf="profile.email"><a href="{{profile.email}}">{{profile.email}}</a> </li> 
-           <li class="list-group-item" *ngIf="profile.blog"><a href="{{profile.blog}}">{{profile.blog}}</a></li>
-           <li class="list-group-item" *ngIf="profile.hireable">Available for hire</li>
-         </ul>
-       </div>
-       
-       <div class="col -sm-5">
-         <div>
-           <p>
-             <button class="btn btn-success"><span class="badge">{{profile.followers}}</span>Followers</button>
-             <button class="btn btn-info"><span class="badge">{{profile.following}}</span>Following</button>
-             <button class="btn btn-secondary"><span class="badge">{{profile.public_gists}}</span>Public Gists</button>
-             <button class="btn btn-warning"><span class="badge">{{profile.public_repos}}</span>Public Repos </button>
-           </p>
-         </div>
-       </div>
+
+        <div class="col-sm-5">
+          <ul class="list-group">
+            <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+            <li class="list-group-item" *ngIf="profile.email"><a href="{{profile.email}}">{{profile.email}}</a> </li>
+            <li class="list-group-item" *ngIf="profile.blog"><a href="{{profile.blog}}">{{profile.blog}}</a></li>
+            <li class="list-group-item" *ngIf="profile.hireable">Available for hire</li>
+          </ul>
+        </div>
+
+        <div class="col -sm-5">
+          <div>
+            <p>
+              <button class="btn btn-success"><span class="badge">{{profile.followers}}</span>Followers</button>
+              <button class="btn btn-info"><span class="badge">{{profile.following}}</span>Following</button>
+              <button class="btn btn-secondary"><span class="badge">{{profile.public_gists}}</span>Public Gists</button>
+              <button class="btn btn-warning"><span class="badge">{{profile.public_repos}}</span>Public Repos </button>
+            </p>
+            <p>
+              <a href="{{profile.html_url}}" class="btn btn-primary">View Github Profile</a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
