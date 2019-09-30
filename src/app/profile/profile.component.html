@@ -1,7 +1,9 @@
 <form action="" class="form">
   <div class="form-group">
-    <input type="text" class="form-control" placeholder="Enter git username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
+    <input type="text" class="form-control" placeholder="Enter git username" [(ngModel)]="username" name="username"
+      (keyup)="findProfile()">
   </div>
+
 </form>
 
 <div *ngIf="profile">
@@ -14,7 +16,7 @@
     <div class="panel-body">
       <div class="row">
         <div class="col-md-6">
-          <img src="{{profile.avatar_url}}" class="rounded-circle img-responsive" width="400px" alt="profile img">
+          <img src="{{profile.avatar_url}}" class="rounded-circle img-responsive" width="300px" alt="profile img">
         </div>
 
         <div class="col-md-6">
@@ -23,10 +25,10 @@
             <li class="list-group-item" *ngIf="profile.email"><a href="{{profile.email}}">{{profile.email}}</a> </li>
             <li class="list-group-item" *ngIf="profile.blog"><a href="{{profile.blog}}">{{profile.blog}}</a></li>
             <li class="list-group-item" *ngIf="profile.hireable">Available for hire</li>
-          </ul>
-        </div>
+          </ul><br>
 
-        <div class="col-sm-5">
+
+
           <div>
             <p>
               <button class="btn btn-success"><span class="badge">{{profile.followers}}</span>Followers</button>
@@ -34,27 +36,28 @@
               <button class="btn btn-secondary"><span class="badge">{{profile.public_gists}}</span>Public Gists</button>
               <button class="btn btn-warning"><span class="badge">{{profile.public_repos}}</span>Public Repos </button>
             </p>
-            <br>
-
+          </div>
+          <br>
+          <div class="col-md-6">
             <p>
               <a href="{{profile.html_url}}" class="btn btn-primary">View Github Profile</a>
             </p>
-
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Repositories</h3>
-              </div>
-              <div class="panel-body" *ngFor="let repo of repos"> <hr>
-                <p>
-                   <strong>{{repo.name}}</strong> <a href="{{repo.html_url}}" class="btn btn-info">View project on github</a>
-                </p>
-                <p *ngIf="repo.description">{{repo.description}}</p>
-              </div>
-            </div>
           </div>
         </div>
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h3 class="panel-title">REPOSITORIES</h3>
+          </div>
+          <div class="panel-body" *ngFor="let repo of repos">
+            <hr>
+            <p>
+              <strong>{{repo.name}}</strong> <a href="{{repo.html_url}}" class="btn btn-info">View project on
+                github</a>
+            </p>
+            <p *ngIf="repo.description">{{repo.description}}</p>
+          </div>
       </div>
     </div>
   </div>
-
+</div>
 </div>
