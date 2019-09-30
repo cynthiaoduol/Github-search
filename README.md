@@ -37,5 +37,5 @@ There are no known bugs at the moment. If found, please reach me at cynthiaobu94
 ## Support and contact details
 Contact me at cynthiaobu940@gmail.com for any comments, reviews or contributions.
 
-### License
+### Licence
 Copyright (c) **Cynthia Oduol**
