@@ -6,7 +6,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component'
 
 
  
@@ -15,6 +17,8 @@ import { FormsModule } from '@angular/forms'
   declarations: [
     AppComponent,
     ProfileComponent,
+    AboutComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule, 

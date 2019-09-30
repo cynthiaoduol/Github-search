@@ -13,11 +13,11 @@
 
     <div class="panel-body">
       <div class="row">
-        <div class="col-sm -3">
+        <div class="col-md-6">
           <img src="{{profile.avatar_url}}" class="rounded-circle img-responsive" width="400px" alt="profile img">
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-md-6">
           <ul class="list-group">
             <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
             <li class="list-group-item" *ngIf="profile.email"><a href="{{profile.email}}">{{profile.email}}</a> </li>

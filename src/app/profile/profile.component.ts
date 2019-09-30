@@ -21,12 +21,12 @@ username:string;
    findProfile(){
      this.profileService.updateProfile(this.username)
      this.profileService.getInfo().subscribe(profile =>{
-      console.log(profile);
+      
       this.profile=profile;
     }); 
 
     this.profileService.getRepos().subscribe(repos =>{
-      console.log(repos);
+      
       this.repos=repos;
     })
    }
