@@ -1,9 +1,14 @@
+<form action="" class="form">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Enter git username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
+  </div>
+</form>
+
 <div *ngIf="profile">
   <div class="panel panel-default">
     <div class="panel-heading">
       {{profile.name}} <small>({{profile.login}})</small>
-      <span *ngIf="profile.company">,Working at {{profile.company}}</span>
-      {{profile.location}}
+      <span *ngIf="profile.company">, Working at {{profile.company}}</span>, {{profile.location}}
     </div>
 
     <div class="panel-body">
