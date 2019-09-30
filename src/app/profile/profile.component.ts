@@ -9,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
  
-profile:any[];
-repos:any[];
+profile:any;
+repos:any;
 username:string;
 
 
