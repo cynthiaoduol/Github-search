@@ -51,13 +51,12 @@
           <div class="panel-body" *ngFor="let repo of repos">
             <hr>
             <p>
-              <strong>{{repo.name}}</strong> <a href="{{repo.html_url}}" class="btn btn-info">View project on
-                github</a>
+              <strong class="text-light">{{repo.name}}</strong> <a href="{{repo.html_url}}" class="btn btn-info">View project on github</a>
             </p>
-            <p *ngIf="repo.description">{{repo.description}}</p>
+            <p *ngIf="repo.description" class="text-light">{{repo.description}}</p>
           </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>
