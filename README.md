@@ -8,7 +8,7 @@ github repository :https://github.com/cynthiaoduol/Github-search.git
 
 Github-search App is a simple application that can be used by Github users.
 
-It allows users to enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. One can also look for repositories.
+It allows users to enter a GitHub username into a form,submit it, and see names and descriptions of that person's public repositories. One can also look for repositories.
 
 On entering the username, it displays the profile picture of the user, numbers of followers, those following, public gists and public repos.
 
