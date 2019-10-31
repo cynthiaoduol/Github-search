@@ -1,6 +1,8 @@
+import { environment } from './../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core'; 
 import { map } from 'rxjs/operators';
+
 
 
 @Injectable({
@@ -9,6 +11,7 @@ import { map } from 'rxjs/operators';
 export class ProfileService {
 
   private username:string;
+  apiKey:string = environment.apiKey;
   private clientid='f11412f1539f4206fdc7';
   private clientsecret='d82675fe7bbeded6ef32736cb33890a638c0a634';
 

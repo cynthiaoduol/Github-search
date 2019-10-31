@@ -9,7 +9,6 @@ import { ProfileComponent } from './profile/profile.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { NotFoundComponent } from './not-found/not-found.component'
 
 
  
@@ -20,7 +19,7 @@ import { NotFoundComponent } from './not-found/not-found.component'
     ProfileComponent,
     AboutComponent,
     NavbarComponent,
-    NotFoundComponent,
+   
   ],
   imports: [
     BrowserModule, 
