@@ -32,6 +32,18 @@ username:string;
    }
 
   ngOnInit() {
-  }
+    this.profileService.updateProfile('cynthiaoduol')
+    this.profileService.getInfo().subscribe(profile =>{
+      
+      this.profile=profile;
 
+
+  })
+  this.profileService.getRepos().subscribe(repos =>{
+      
+    this.repos=repos;
+  })
+
+
+}
 }
