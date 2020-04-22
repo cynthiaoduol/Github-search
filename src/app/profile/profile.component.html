@@ -5,10 +5,10 @@
         (keyup)="findProfile()" />
     </div>
   </form>
-
+<br>
   <div *ngIf="profile">
     <!-- <div class="card"> -->
-      <div class="container-fluid">
+      <div class="container">
         <h3 class="text-center"><strong>USER'S PROFILE</strong></h3>
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -23,7 +23,7 @@
                   alt="profile img" />
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-6">
                 <ul class="list-group">
                   <li class="list-group-item" *ngIf="profile.bio">
                     {{ profile.bio }}
