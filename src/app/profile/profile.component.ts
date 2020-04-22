@@ -39,10 +39,10 @@ username:string;
 
 
   })
-  this.profileService.getRepos().subscribe(repos =>{
+  // this.profileService.getRepos().subscribe(repos =>{
       
-    this.repos=repos;
-  })
+  //   this.repos=repos;
+  // })
 
 
 }
